@@ -1,0 +1,43 @@
+.audio_controls .progress_container {
+	width: 93%;
+}
+
+.ruirize-volume {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 7%;
+	border-left: 1px solid RGBA(0,0,0,0.14902);
+	cursor: pointer;
+}
+.ruirize-volume:active {
+	cursor: url('/images/closedhand.cur'),move!important;
+	cursor: -webkit-grabbing!important;
+	cursor: -moz-grabbing!important;
+}
+
+.ruirize-current-volume {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-top: 1px solid RGBA(0,0,0,0.14902);
+	background: rgba(0,0,0,0.05);
+	pointer-events: none;
+}
+
+.ruirize-volume-cursor {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: RGBA(0,0,0,0.14902);
+	transition: opacity 0.3s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.ruirize-volume:hover .ruirize-volume-cursor {
+	opacity: 1;
+}
